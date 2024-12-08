@@ -310,9 +310,36 @@ export type RouterType = {
     id: number;
     ttitle: string;
     shareUrl: string;
-    username:string;
+    username: string;
     tpic: string;
     message: string;
     replynum: number;
+  };
+  xueqiu: {
+    pic: string;
+    tag: string;
+    id: number;
+    hot: number;
+    content: string;
+  };
+  guokr: {
+    id: number;
+    title: string;
+    summary: string;
+    author: {
+      nickname: string;
+    };
+    date_modified: string;
+    small_image: string;
+  };
+  kuaishou: {
+    id: string;
+    name: string;
+    hotValue: string;
+    iconUrl: string;
+    poster:string;
+    photoIds: {
+      json: string[];
+    };
   };
 };
